@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI & SEO Specialist Portfolio</title>
+  <style>
+    :root {
+      --primary: #2D3250;
+      --secondary: #424769;
+      --accent: #7077A1;
+      --bg-main: #F6F8FF;
+      --bg-card: #FFFFFF;
+      --text-primary: #2D3250;
+      --text-secondary: #676F9D;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background-color: var(--bg-main);
+      color: var(--text-primary);
+      line-height: 1.5;
+    }
+    .navbar {
+      background: var(--bg-card);
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+    .nav-links a {
+      color: var(--text-primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .hero {
+      padding: 8rem 2rem 4rem;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      text-align: center;
+    }
+    .hero-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .card {
+      background: var(--bg-card);
+      padding: 2rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .skill-badge {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: var(--accent);
+      color: white;
+      border-radius: 999px;
+      margin: 0.25rem;
+      font-size: 0.875rem;
+    }
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #ddd;
+      border-radius: 0.25rem;
+      font-family: inherit;
+    }
+    button {
+      background: var(--primary);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 0.25rem;
+      cursor: pointer;
+      font-weight: 500;
+    }
+    button:hover {
+      background: var(--secondary);
+    }
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-content">
+      <h2>AI & SEO Expert</h2>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1 style="font-size: 3rem; margin-bottom: 1rem;">AI & SEO Specialist</h1>
+      <p style="font-size: 1.25rem;">Helping businesses leverage AI and optimize their online presence</p>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2 style="margin-bottom: 2rem;">About Me</h2>
+    <div class="card">
+      <p>Experienced AI and SEO specialist with a proven track record of implementing AI solutions and improving search rankings for businesses across various industries. Combining technical expertise with strategic thinking to deliver measurable results.</p>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <h2 style="margin-bottom: 2rem;">Skills</h2>
+    <div class="grid">
+      <div class="card">
+        <h3 style="margin-bottom: 1rem;">AI Expertise</h3>
+        <div>
+          <span class="skill-badge">Machine Learning</span>
+          <span class="skill-badge">Natural Language Processing</span>
+          <span class="skill-badge">Neural Networks</span>
+          <span class="skill-badge">Deep Learning</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3 style="margin-bottom: 1rem;">SEO Skills</h3>
+        <div>
+          <span class="skill-badge">Technical SEO</span>
+          <span class="skill-badge">Content Optimization</span>
+          <span class="skill-badge">Link Building</span>
+          <span class="skill-badge">Analytics</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2 style="margin-bottom: 2rem;">Featured Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3 style="margin-bottom: 1rem;">AI-Powered Content Generator</h3>
+        <p>Developed an AI system that generates SEO-optimized content for websites and blogs.</p>
+      </div>
+      <div class="card">
+        <h3 style="margin-bottom: 1rem;">SEO Performance Dashboard</h3>
+        <p>Created a comprehensive dashboard for tracking and analyzing SEO metrics in real-time.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2 style="margin-bottom: 2rem;">Contact Me</h2>
+    <form class="contact-form" id="contactForm">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" required></textarea>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      
+      // In a real implementation, you would send this data to a server
+      console.log('Form submitted:', { name, email, message });
+      alert('Thank you for your message! I will get back to you soon.');
+      e.target.reset();
+    });
+  </script>
+</body>
+</html>
